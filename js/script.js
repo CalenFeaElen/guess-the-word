@@ -146,6 +146,7 @@ const updateWordInProgress = function (guessedLetters) {
 
   hiddenButton.addEventListener("click", function(){
       message.classList.remove("win");
+      guessedList = [];
       remainingGuesses = 8;
       remainingGuessesSpan.innerText = `${remainingGuesses} guesses`;
       message.innerText = "";
